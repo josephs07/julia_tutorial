@@ -1,17 +1,13 @@
 
-"""
-bar(x[, y])
+using Plots
 
-Compute the Bar index between `x` and `y`.
+a = collect(1:20)
 
-If `y` is unspecified, compute the Bar index between all pairs of columns of `x`.
 
-# Examples
-```julia-repl
-julia> bar([1, 2], [1, 2])
-1
-```
-"""
-function bar(x, y) ...
+f(x)=x^1
 
-    
+b=f.(a)
+
+c=a+b*2
+
+# plot(a,b)
